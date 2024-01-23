@@ -1,0 +1,31 @@
+/* Card */
+
+.fullcard {
+    height: auto;
+    margin: 15px;        
+}
+
+.fullcard:hover {
+    margin: 0px;
+}
+
+.fullcard .card-text {
+    padding: 5px 15px;
+    transition: opacity 1s ease; /* Added transition property */
+    opacity: 1; /* Start with opacity 1 */
+}
+
+.fullcard p.card-desc {
+    display: none;
+    opacity: 0; /* Start with opacity 0 */
+    transition: opacity 2s ease; /* Added transition property */
+}
+
+.fullcard:hover p.card-desc {
+    display: inline;
+    opacity: 1;
+}
+
+.card-text h3, .card-text p {
+    text-align: center;
+}

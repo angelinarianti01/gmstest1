@@ -1,0 +1,75 @@
+#cont {
+    position: relative;
+    background-image: url('../images/background/laser_cut.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+#cont::before {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    z-index: 0; 
+}
+
+#hero {
+    background-color: transparent;
+    padding-top: 300px;
+    padding-bottom: 125px;
+}
+
+
+#featured-clients {
+    background-color: white;
+}
+
+#hero-text {
+    font-size: 3.5rem;
+}
+
+/* Statistic */
+#statistics {
+    position: relative;
+    background-image: url('../images/background/building.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+#statistics::before {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.4);
+    z-index: 0; 
+}
+
+.stats-number, .stats-desc {
+    text-align: center;
+}
+
+.stats-number {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.stats-desc {
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Get a quote */
+#get-a-quote {
+    background-color: var(--blue);
+}
+
+/* Card */
+

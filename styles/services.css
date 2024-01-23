@@ -1,0 +1,88 @@
+.detail-card h4 {
+    font-weight: 500;
+}
+
+.detail-card {
+    background-color: var(--light-gray);
+    border-radius: 10px;
+}
+
+.detail-card .card-title {    
+    background-color: var(--blue);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.detail-card .icon {
+    width: 20px;
+}
+
+#get-a-quote {
+    background-color: var(--light-gray); 
+}
+
+.center-vertically {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* Subtab card */
+.overflow-x-auto {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+.subtab .img-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+    width: 100%;
+    height: 350px;
+}
+
+.card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    color: white;
+}
+
+.subtab {
+    display: inline-block;
+}
+
+.subtab.active, .subtab:hover {
+    border: none;
+}
+
+.subtab-content {
+    text-align: center;  
+    max-width: 400px;
+    align-self: center;
+}
+
+.subtab-content img {
+    width: 300px;
+    margin: 10px;
+}
+
+.subtab.active > .img-card > .card-body {
+    border-bottom: 5px solid var(--yellow);
+}
+

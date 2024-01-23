@@ -1,0 +1,245 @@
+:root {
+    --blue: RGB(12, 25, 96);
+    --yellow: RGB(246, 180, 38);
+    --light-gray: RGB(241, 241, 241);
+    --dark-gray: RGB(28, 31, 53);
+    --silver: RGB(102, 108, 137);
+}
+
+html {    
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+}
+
+section {
+    background-color: white;
+}
+
+.horizontal-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Nav */
+.navContainer {
+    position: fixed;
+    width: 100vw; /* Set width to 100% of viewport width */
+    z-index: 10;
+    top: 0;
+}
+
+/* Header */
+.header {
+    position: relative;
+    background-image: url('../images/background/building.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: auto;
+    padding-top: 200px;
+    color: white;
+}
+
+.header::before {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 0; 
+}
+
+/* Column */
+.double-col {
+    width: 100%;
+    display: flex;
+}
+
+.col {
+    display: flex;        
+    flex-direction: column;
+    justify-content: center;        
+}
+
+/* Text */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 500;    
+    color: var(-blue);
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 500;    
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 500;    
+}
+
+h4{
+    font-size: 1.25rem;
+    font-weight: 300;    
+}
+
+.center-text {
+    text-align: center;
+}
+
+.big-bold-text {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.blue-text {
+    color: var(--blue);
+}
+
+
+/* Button */
+.white-button {    
+    padding: 15px 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: 175px;
+    font-weight: 600;
+}
+
+.white-button:hover {    
+    color: var(--blue);
+    background-color: white;
+    font-weight: 600;
+}
+
+.blue-button {    
+    padding: 15px 15px;
+    border: 2px solid var(--blue);
+    border-radius: 10px;
+    text-align: center;
+    color: var(--blue);
+    width: 175px;
+    font-weight: 600;
+}
+
+.blue-button:hover {    
+    color: white;
+    background-color: var(--blue);
+    font-weight: 600;
+}
+
+.yellow-button {    
+    padding: 15px 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    width: 175px;
+    background-color: var(--yellow);
+    font-weight: 600;
+}
+
+.yellow-button:hover {    
+    color: var(--blue);
+    background-color: white;
+    font-weight: 600;
+}
+
+/* Tabs */
+.tabs, .subtabs {
+    display: flex;
+}
+
+.tab, .subtab {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    margin-right: 5px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.tab:hover, .subtab:hover {
+    border-bottom: 3px solid var(--yellow);
+}
+
+.tab-content, .subtab-content {
+    display: none;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+}
+
+.tab-content.show, .subtab-content.show {
+    display: block;
+}
+
+.tab.active, .subtab.active {
+    border-bottom: 3px solid var(--yellow);
+    font-weight: 600;
+}
+
+.tab-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Card */
+.fullcard {
+    background-color: var(--light-gray);
+    text-align: center;
+    border-radius: 10px; 
+    height: 100%;
+}
+
+.fullcard img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 150px; 
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px; 
+}
+
+.product-card {
+    background-color: var(--light-gray);
+    display: flex;    
+    text-align: center;
+    border-radius: 10px; 
+    height: 100%;
+}
+
+.product-card img {
+    margin: 10px;
+    height: 150px; 
+}
+
+.textcard {
+    background-color: var(--light-gray);
+    display: flex;    
+    text-align: center;
+    border-radius: 10px; 
+    height: 100%;
+    padding: 5% 5%;
+}
+
+.textcard img {
+    height: 50px; 
+    width: 50px;
+    margin: 10px auto; 
+}
+
+.img-card {
+    height: 100%;
+}
+

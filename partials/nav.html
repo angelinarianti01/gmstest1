@@ -1,0 +1,101 @@
+<div class="row navbar-top">
+    <div class="col-11">
+        <div class="row d-flex justify-content-end">
+            <a target="_blank" href="mailto:sales@globalmultisolusi.com" class="btn btn-link text-white">
+                sales@globalmultisolusi.com
+            </a>
+            <a target="_blank" href="tel:+6231566 4551" class="btn btn-link text-white ">+62 31 566 4551</a>
+        </div>
+    </div>
+</div>
+<div class="row navbar-bottom">   
+    <div class="col-1"></div> 
+    <div class="col-7">
+        <div class="row">    
+            <div class="col">
+                <a class="" href="home.html">
+                    <img class="logo" src="../images/logo/white.png" alt="">
+                </a>
+            </div>
+            <div class="col menu">
+                <a class="" href="about-us.html">About Us</a>                
+            </div>
+            <div class="col menu">
+                <a class="" href="products.html">Products</a>                
+            </div>
+            <div class="col menu">
+                <a class="" href="services.html">Services & Solution</a>                
+            </div>
+            <div class="col menu">
+                <a class="" href="contact-us.html">Contact Us</a>                
+            </div>
+        </div>
+    </div>    
+    <div class="col-3">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col text-end">
+                <a href="../contact-us.html" class=""><div class="yellow-button">Get A Quote</div></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-1"></div>
+</div>
+
+<style>
+    .navbar-top {      
+        background-color: #0c1960;
+        color: white;
+        padding: 10px 0;
+        z-index: 10;
+    }
+
+    .navbar-bottom {
+        background-color: rgba(12, 25, 96, 0.7);
+        /* background-color: rgba(255, 255, 255, 0.5); */
+        color: white;
+        height: auto;    
+        padding: 10px 0;
+        align-items: center;
+    } 
+
+    .menu {
+        border-right: 0.05px solid white;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .menu:hover a {  
+        color: var(--yellow);
+    }
+
+    a.selected {
+        color: var(--yellow);
+    }
+    
+    .logo {
+        width: 100px;
+    }
+    
+</style>
+
+<script>
+
+$(document).ready(function() {
+    // Get the current page URL
+    var currentPageUrl = window.location.pathname.substring(1).split('/').pop();;
+    // Select the menu items and loop through them
+    $('.menu a').each(function() {
+        // Check if the href attribute of the menu item matches the current page URL
+        if ($(this).attr('href') === currentPageUrl) {
+            $(this).addClass('selected');
+        }
+    });
+});
+
+</script>
